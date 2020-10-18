@@ -289,39 +289,6 @@
         }
       },
       {
-        "HashCode": -941278575,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Pages.Index",
-        "AssemblyName": "Blazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -1867545302,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Pages.Index",
-        "AssemblyName": "Blazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazor.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1150831990,
         "Kind": "Components.Component",
         "Name": "Blazor.Pages.FetchData",
@@ -351,6 +318,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Blazor.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -941278575,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Pages.Index",
+        "AssemblyName": "Blazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -1867545302,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Pages.Index",
+        "AssemblyName": "Blazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Blazor.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
