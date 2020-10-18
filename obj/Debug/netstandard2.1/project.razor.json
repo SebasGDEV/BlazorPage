@@ -223,39 +223,6 @@
         }
       },
       {
-        "HashCode": -1284278855,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Pages.Liquidacion",
-        "AssemblyName": "Blazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Liquidacion"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Pages.Liquidacion"
-        }
-      },
-      {
-        "HashCode": 789980855,
-        "Kind": "Components.Component",
-        "Name": "Blazor.Pages.Liquidacion",
-        "AssemblyName": "Blazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazor.Pages.Liquidacion"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Pages.Liquidacion",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1150831990,
         "Kind": "Components.Component",
         "Name": "Blazor.Pages.FetchData",
@@ -318,6 +285,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Blazor.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1284278855,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Pages.Liquidacion",
+        "AssemblyName": "Blazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Liquidacion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Pages.Liquidacion"
+        }
+      },
+      {
+        "HashCode": 789980855,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Pages.Liquidacion",
+        "AssemblyName": "Blazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Blazor.Pages.Liquidacion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Pages.Liquidacion",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
