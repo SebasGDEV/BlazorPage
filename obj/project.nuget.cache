@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oQuiY/ZNK4OM4g6UtPZEvrEJul7dzW7P5A1AY/gt6M+ibd0rXErbPneL++BINf/QAeBnKULYi4X9ZOU1bAWzjA==",
+  "dgSpecHash": "SfSVLNQyKK4JdJPgi5RgfCBNUoogo/ovWI6H/7fLaZekKjZH9CrDZ+eUa2E3jz1QiC5jZkLiLjRfTB+4gdJNpA==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Blazor\\Blazor.csproj",
+  "projectFilePath": "C:\\Users\\SGARCORO\\Documents\\GitHub\\BlazorPage\\Blazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SGARCORO\\.nuget\\packages\\matblazor\\2.7.0\\matblazor.2.7.0.nupkg.sha512",
     "C:\\Users\\SGARCORO\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
