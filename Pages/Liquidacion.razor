@@ -46,15 +46,24 @@
         FechaHoy=DateTime.Now;
         Console.WriteLine(FechaHoy.ToString("MM/dd/yyyy"));
         double diferenciaDias= (FechaHoy - FechaInicio).TotalDays;
+
+        @* Diferencia de Dias *@
+        Console.WriteLine("Diferencia de puros Dias");
+        Console.WriteLine(diferenciaDias);
+
+        @* Diferencia de años *@
         var diferenciaAnos=Convert.ToInt32(diferenciaDias/365);
-        Console.WriteLine("Años y luego Int y luego entre 365");
+        Console.WriteLine("Diferencia de años");
         Console.WriteLine(diferenciaAnos);
+
+
         @* Diferenciar Los meses a partir del que iniciaste ej: 16/10/2019 - 20/11/2020 = 1 año 1 mes 4 dias *@
-        var diferenciaMeses = (diferenciaDias - (diferenciaAnos*365))/30;
+        var diferenciaMeses =Convert.ToInt32((diferenciaDias - (diferenciaAnos*365))/30);
+        Console.WriteLine("Diferencia de Meses");
         Console.WriteLine(diferenciaMeses);
 
         Console.WriteLine(" de solo dias");
-        Console.WriteLine(diferenciaDias-(diferenciaAnos*365));
+        Console.WriteLine(diferenciaDias-(diferenciaAnos*365)-(diferenciaMeses*30));
 
 
         @* Procesamiento de los datos *@
