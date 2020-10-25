@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <title>Calculadora Contable</title>
-    <base href="/" />
+    <base href="" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link rel="stylesheet" href="_content/Radzen.Blazor/css/default-base.css" />
@@ -24,14 +24,9 @@
 
     <div id="blazor-error-ui">
       An unhandled error has occurred.
-      <a href="" class="reload">Reload</a>
+      <a href="" class="reload">Reload now</a>
       <a class="dismiss">🗙</a>
     </div>
-    <script>
-      Blazor.defaultReconnectionHandler._reconnectCallback = function (d) {
-        document.location.reload();
-      };
-    </script>
     <script src="Utilities.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
   </body>
