@@ -62,8 +62,10 @@
         Console.WriteLine("Diferencia de Meses");
         Console.WriteLine(diferenciaMeses);
 
-        Console.WriteLine(" de solo dias");
-        Console.WriteLine(diferenciaDias-(diferenciaAnos*365)-(diferenciaMeses*30));
+        @* Diferencia de SOLO DIAS *@
+        var diferenciaSoloDias =Convert.ToInt32(diferenciaDias-(diferenciaAnos*365)-(diferenciaMeses*30));
+        Console.WriteLine("Diferencia de solo dias");
+        Console.WriteLine(diferenciaSoloDias);
 
 
         @* Procesamiento de los datos *@
