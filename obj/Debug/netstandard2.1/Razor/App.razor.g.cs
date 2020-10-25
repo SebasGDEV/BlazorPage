@@ -73,20 +73,6 @@ using Blazor.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\SGARCORO\Documents\GitHub\BlazorPage\_Imports.razor"
-using Radzen;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 11 "C:\Users\SGARCORO\Documents\GitHub\BlazorPage\_Imports.razor"
-using Radzen.Blazor;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 12 "C:\Users\SGARCORO\Documents\GitHub\BlazorPage\_Imports.razor"
 using MatBlazor;
 
