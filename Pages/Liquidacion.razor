@@ -2,9 +2,6 @@
 @inject IJSRuntime js
 
 
-
-
-
 <center><h1>     Calculadora de Liquidación    </h1>
 <div style="width: 20rem;">
 
@@ -32,7 +29,8 @@
 {
      string DiasdeVacaciones;
      string SalarioMensual;
-     string FechaInicio;
+   
+     DateTime FechaInicio;
     
 
 
@@ -41,7 +39,7 @@
         private void LimpiarFormulario(){
         DiasdeVacaciones=string.Empty;
         SalarioMensual=string.Empty;
-        FechaInicio=string.Empty;
+        FechaInicio=DateTime.Now;
         
         
 
