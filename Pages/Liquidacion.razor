@@ -20,9 +20,6 @@
     <MatButton Raised="true" style="width: 6rem;" @onclick="@LimpiarFormulario">Limpiar</MatButton>
     <MatButton Raised="true" style="width: 13rem;" @onclick="@sumar">Calcular</MatButton>
     </div>
-    <br>
-    <br>
-    <MatTextField @bind-Value="@resultado"></MatTextField>
 
 
 </div>
@@ -34,32 +31,48 @@
      string DiasdeVacaciones;
      string SalarioMensual;
      DateTime FechaInicio;
-     double resultado;
+     DateTime FechaHoy;
+     double salarioDiario;
     
 
-@* Captura del salari menssual para sacar el diario *@
+@* Captura del salario menssual para sacar el diario *@
 
     public void sumar(){
-        int _salarioMensual = Int16.Parse(SalarioMensual);
-       Console.WriteLine(_salarioMensual);
-    
-        resultado=_salarioMensual/30;
-        
+        @* Conversiones a Int *@
+        int _salarioMensual = Int32.Parse(SalarioMensual);
+        @* int _diasdeVacaciones=Int32.Parse(DiasdeVacaciones); *@
+
+        @* Procesamiento de fechas *@
+        FechaHoy=DateTime.Now;
+        Console.WriteLine(FechaHoy.ToString("MM/dd/yyyy"));
+        double diferenciaDias= (FechaHoy - FechaInicio).TotalDays;
+        var diferenciaAnos=Convert.ToInt32(diferenciaDias/365);
+        Console.WriteLine("Años y luego Int y luego entre 365");
+        Console.WriteLine(diferenciaAnos);
+        @* Diferenciar Los meses a partir del que iniciaste ej: 16/10/2019 - 20/11/2020 = 1 año 1 mes 4 dias *@
+        var diferenciaMeses = (diferenciaDias - (diferenciaAnos*365))/30;
+        Console.WriteLine(diferenciaMeses);
+
+        Console.WriteLine(" de solo dias");
+        Console.WriteLine(diferenciaDias-(diferenciaAnos*365));
+
+
+        @* Procesamiento de los datos *@
+        Console.WriteLine(_salarioMensual);
+        salarioDiario=_salarioMensual/30;
         Console.WriteLine("El salario diario es");
-        Console.WriteLine(resultado);
+        Console.WriteLine(salarioDiario);
          
     }
 
 
 /*Utilidades*/
 
-        private void LimpiarFormulario(){
-        var DiasdeVacaciones=string.Empty;
-        var SalarioMensual=string.Empty;
+        private void LimpiarFormulario()
+        {
+        DiasdeVacaciones=string.Empty;
+        SalarioMensual=string.Empty;
         FechaInicio=DateTime.Now;
-        
-        
-
         }
     
         protected override async Task OnAfterRenderAsync(bool firstRender)
