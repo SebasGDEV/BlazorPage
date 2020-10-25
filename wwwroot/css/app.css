@@ -32,9 +32,9 @@ app {
   align-items: center;
 }
 
-ContenedorCalculadora {
+.contenedorcalculadora {
   width: 20rem;
-  display: -webkit-flex;
+  -webkit-box-flex: inherit;
   direction: row;
 }
 
