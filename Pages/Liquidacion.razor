@@ -18,9 +18,11 @@
     <br><br>
     <div class="contenedor" >
     <MatButton Raised="true" style="width: 6rem;" @onclick="@LimpiarFormulario">Limpiar</MatButton>
-    <MatButton Raised="true" style="width: 13rem;">Calcular</MatButton>
+    <MatButton Raised="true" style="width: 13rem;" @onclick="@sumar">Calcular</MatButton>
     </div>
-    <MatBlazor.MatH1>sjuh</MatBlazor.MatH1>
+    <br>
+    <br>
+    <MatTextField @bind-Value="@resultado"></MatTextField>
 
 
 </div>
@@ -31,16 +33,29 @@
 {
      string DiasdeVacaciones;
      string SalarioMensual;
-   
      DateTime FechaInicio;
+     double resultado;
     
+
+@* Captura del salari menssual para sacar el diario *@
+
+    public void sumar(){
+        int _salarioMensual = Int16.Parse(SalarioMensual);
+       Console.WriteLine(_salarioMensual);
+    
+        resultado=_salarioMensual/30;
+        
+        Console.WriteLine("El salario diario es");
+        Console.WriteLine(resultado);
+         
+    }
 
 
 /*Utilidades*/
 
         private void LimpiarFormulario(){
-        DiasdeVacaciones=string.Empty;
-        SalarioMensual=string.Empty;
+        var DiasdeVacaciones=string.Empty;
+        var SalarioMensual=string.Empty;
         FechaInicio=DateTime.Now;
         
         
