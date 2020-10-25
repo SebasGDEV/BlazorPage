@@ -46,7 +46,6 @@ ContenedorCalculadora {
   background-color: #0b0831;
   border-bottom: 1px solid #02010eef;
   justify-content: flex-end;
-  box-shadow: 30px 30px 47px -20px rgba(0, 0, 0, 0.53);
 }
 
 .main .top-row > a,
@@ -67,7 +66,7 @@ ContenedorCalculadora {
 
 .sidebar .top-row {
   background-color: #0b0831;
-  box-shadow: 30px 30px 47px -20px rgba(0, 0, 0, 0.53);
+  /* box-shadow: 30px 30px 47px -20px rgba(0, 0, 0, 0.53); */
 }
 
 .sidebar .navbar-brand {
