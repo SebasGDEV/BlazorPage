@@ -739,6 +739,6 @@ C:\Users\SGARCORO\Documents\GitHub\BlazorPage\obj\Debug\netstandard2.1\compresse
 C:\Users\SGARCORO\Documents\GitHub\BlazorPage\obj\Debug\netstandard2.1\compressed\_framework\blazor.boot.json.br
 C:\Users\SGARCORO\Documents\GitHub\BlazorPage\obj\Debug\netstandard2.1\staticwebassets\Blazor.StaticWebAssets.Manifest.cache
 C:\Users\SGARCORO\Documents\GitHub\BlazorPage\obj\Debug\netstandard2.1\staticwebassets\Blazor.StaticWebAssets.xml
-C:\Users\SGARCORO\Documents\GitHub\BlazorPage\obj\Debug\netstandard2.1\integrity\IIvAIKXxei9E-u48BZ0i2kq2GCWsiK5ARnjx1jZLDfE=.hash
-C:\Users\SGARCORO\Documents\GitHub\BlazorPage\obj\Debug\netstandard2.1\integrity\JVpOfjQVyc7TobJKu0ii3CHe7Ida_TJ8J7HLGCRn_yE=.hash
-C:\Users\SGARCORO\Documents\GitHub\BlazorPage\obj\Debug\netstandard2.1\integrity\4NK3mJPw1jKFTT_dbgnt7z7hjoobJlbXzCmbcqBXBhI=.hash
+C:\Users\SGARCORO\Documents\GitHub\BlazorPage\obj\Debug\netstandard2.1\integrity\342PjGC6nD8rBl4R61cVz1eiAcBkh3U7dUSX8ZmGBWQ=.hash
+C:\Users\SGARCORO\Documents\GitHub\BlazorPage\obj\Debug\netstandard2.1\integrity\xhoPGMNaLe8HHWY5WOHJZ16Bk932AfjRKflQwGSyWiw=.hash
+C:\Users\SGARCORO\Documents\GitHub\BlazorPage\obj\Debug\netstandard2.1\integrity\jZSI2Q0yCbn40JD4Cui4l5AvviAPqo3UXEE0hk1P_cc=.hash
