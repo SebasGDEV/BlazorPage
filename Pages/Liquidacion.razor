@@ -28,11 +28,12 @@
 
 @code
 {
-     string DiasdeVacaciones;
-     string SalarioMensual;
+     string DiasdeVacaciones="0";
+     string SalarioMensual="0";
      DateTime FechaInicio;
      DateTime FechaHoy;
-     double salarioDiario;
+     DateTime Fecha2;
+     double salarioDiario=0;
     
 
 @* Captura del salario menssual para sacar el diario *@
@@ -45,27 +46,22 @@
         @* Procesamiento de fechas *@
         FechaHoy=DateTime.Now;
         Console.WriteLine(FechaHoy.ToString("MM/dd/yyyy"));
-        double diferenciaDias= (FechaHoy - FechaInicio).TotalDays;
-
-        @* Diferencia de Dias *@
-        Console.WriteLine("Diferencia de puros Dias");
-        Console.WriteLine(diferenciaDias);
-
-        @* Diferencia de años *@
-        var diferenciaAnos=Convert.ToInt32(diferenciaDias/365);
-        Console.WriteLine("Diferencia de años");
-        Console.WriteLine(diferenciaAnos);
-
-
-        @* Diferenciar Los meses a partir del que iniciaste ej: 16/10/2019 - 20/11/2020 = 1 año 1 mes 4 dias *@
-        var diferenciaMeses =Convert.ToInt32((diferenciaDias - (diferenciaAnos*365))/30);
-        Console.WriteLine("Diferencia de Meses");
-        Console.WriteLine(diferenciaMeses);
-
-        @* Diferencia de SOLO DIAS *@
-        var diferenciaSoloDias =Convert.ToInt32(diferenciaDias-(diferenciaAnos*365)-(diferenciaMeses*30));
-        Console.WriteLine("Diferencia de solo dias");
-        Console.WriteLine(diferenciaSoloDias);
+        Console.WriteLine("Proceamiento de las fechas");
+        var yearsOld = FechaHoy - FechaInicio;
+        Console.WriteLine("Dias del test");
+        Console.WriteLine(yearsOld);
+        int years = (int)(yearsOld.TotalDays / 365.25);
+        int months = (int)(((yearsOld.TotalDays / 365.25) - years) * 12);
+        int dayss= (int)(( ( ( ( yearsOld.TotalDays / 365.25) - years) * 12)-months)*30.5);
+        Console.WriteLine("RESULTADO");
+        Console.WriteLine("Años");
+        Console.WriteLine(years);
+        Console.WriteLine("Meses");
+        Console.WriteLine(months);
+        Console.WriteLine("Dias");
+        Console.WriteLine(dayss);
+        Console.WriteLine("TERMINA TEST");
+        @* TESTTTTTTT TERMINA *@
 
 
         @* Procesamiento de los datos *@
