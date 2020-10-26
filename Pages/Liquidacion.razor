@@ -45,6 +45,8 @@
         @* Procesamiento de fechas *@
         FechaHoy=DateTime.Now;
         Console.WriteLine(FechaHoy.ToString("MM/dd/yyyy"));
+        int anio=Convert.ToInt32(FechaHoy.ToString("yyyy"));
+        System.Console.WriteLine("aniiio " + anio);
         Console.WriteLine("Proceamiento de las fechas");
         var yearsOld = FechaHoy - FechaInicio;
         Console.WriteLine("Dias del test: "+ yearsOld);
