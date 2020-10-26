@@ -47,29 +47,21 @@
         Console.WriteLine(FechaHoy.ToString("MM/dd/yyyy"));
         Console.WriteLine("Proceamiento de las fechas");
         var yearsOld = FechaHoy - FechaInicio;
-        Console.WriteLine("Dias del test");
-        Console.WriteLine(yearsOld);
+        Console.WriteLine("Dias del test: "+ yearsOld);
         int years = (int)(yearsOld.TotalDays / 365.25);
         int months = (int)(((yearsOld.TotalDays / 365.25) - years) * 12);
         int dayss= (int)(( ( ( ( yearsOld.TotalDays / 365.25) - years) * 12)-months)*30.5);
         Console.WriteLine("RESULTADO");
-        Console.WriteLine("Años");
-        Console.WriteLine(years);
-        Console.WriteLine("Meses");
-        Console.WriteLine(months);
-        Console.WriteLine("Dias");
-        Console.WriteLine(dayss);
-        Console.WriteLine("TERMINA TEST");
-        @* TESTTTTTTT TERMINA *@
-
+        Console.WriteLine(years + " Años");
+        Console.WriteLine(months + " Meses");
+        Console.WriteLine(dayss + " Dias");
 
         @* Procesamiento de los datos *@
 
         @* Salario DIARIO *@
         Console.WriteLine(_salarioMensual);
         salarioDiario=(_salarioMensual/30);
-        Console.WriteLine("El salario diario es");
-        Console.WriteLine(salarioDiario);
+        Console.WriteLine("El salario diario es: "+ salarioDiario);
 
         @* VACACIONES *@
         pagoVacaciones=salarioDiario*_diasdeVacaciones;
