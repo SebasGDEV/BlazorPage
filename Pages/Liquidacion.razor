@@ -31,16 +31,16 @@
      string DiasdeVacaciones;
      string SalarioMensual;
      DateTime FechaInicio, FechaHoy;
-     double salarioDiario=0,  pagoVacaciones=0, noventaDiasSalario=0, doceDiasSalario=0, aguinaldo=0;
-     int _salarioMensual, _diasdeVacaciones;
+     double salarioDiario=0,  pagoVacaciones=0, noventaDiasSalario=0, doceDiasSalario=0, aguinaldo=0,
+     _salarioMensual, _diasdeVacaciones;
      
 
     @* Captura del salario menssual para sacar el diario *@
 
     public void sumar(){
         @* Conversiones a Int *@
-        _salarioMensual = Int32.Parse(SalarioMensual);
-        _diasdeVacaciones=Int32.Parse(DiasdeVacaciones);
+        _salarioMensual = Convert.ToDouble(SalarioMensual);
+        _diasdeVacaciones=Convert.ToDouble(DiasdeVacaciones);
 
         @* Procesamiento de fechas *@
         FechaHoy=DateTime.Now;
@@ -64,6 +64,8 @@
 
 
         @* Procesamiento de los datos *@
+
+        @* Salario DIARIO *@
         Console.WriteLine(_salarioMensual);
         salarioDiario=(_salarioMensual/30);
         Console.WriteLine("El salario diario es");
@@ -78,7 +80,7 @@
         Console.WriteLine("90 dias de salario: "+ noventaDiasSalario);
 
         @* 12 DIAS DEL SALARIO *@
-        doceDiasSalario=salarioDiario*20;
+        doceDiasSalario=salarioDiario*12*years;
         Console.WriteLine("12 dias de salario: "+ doceDiasSalario);
 
         @* AGUINALDO = 15 dias de salario *@
