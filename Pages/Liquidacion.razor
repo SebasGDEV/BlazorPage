@@ -28,20 +28,19 @@
 
 @code
 {
-     string DiasdeVacaciones="0";
-     string SalarioMensual="0";
-     DateTime FechaInicio;
-     DateTime FechaHoy;
-     DateTime Fecha2;
-     double salarioDiario=0;
+     string DiasdeVacaciones;
+     string SalarioMensual;
+     DateTime FechaInicio, FechaHoy;
+     double salarioDiario=0,  pagoVacaciones=0, noventaDiasSalario=0, doceDiasSalario=0;
+     int _salarioMensual=0, _diasdeVacaciones=0;
     
 
-@* Captura del salario menssual para sacar el diario *@
+    @* Captura del salario menssual para sacar el diario *@
 
     public void sumar(){
         @* Conversiones a Int *@
-        int _salarioMensual = Int32.Parse(SalarioMensual);
-        @* int _diasdeVacaciones=Int32.Parse(DiasdeVacaciones); *@
+        _salarioMensual = Int32.Parse(SalarioMensual);
+        _diasdeVacaciones=Int32.Parse(DiasdeVacaciones);
 
         @* Procesamiento de fechas *@
         FechaHoy=DateTime.Now;
@@ -66,11 +65,32 @@
 
         @* Procesamiento de los datos *@
         Console.WriteLine(_salarioMensual);
-        salarioDiario=_salarioMensual/30;
+        salarioDiario=(_salarioMensual/30);
         Console.WriteLine("El salario diario es");
         Console.WriteLine(salarioDiario);
+
+        @* VACACIONES *@
+        pagoVacaciones=salarioDiario*_diasdeVacaciones;
+        Console.WriteLine("Pago de vacaciones: "+ pagoVacaciones);
+
+        @* 90 DIAS DEL SALARIO *@
+        noventaDiasSalario=salarioDiario*90;
+        Console.WriteLine("90 dias de salario: "+ noventaDiasSalario);
+
+        @* 12 DIAS DEL SALARIO *@
+        doceDiasSalario=salarioDiario*20;
+        Console.WriteLine("20 dias de salario: "+ doceDiasSalario);
+
+        @* AGUINALDO *@
+
+        @* TOTAL DE LA LIQUIDACIÓN *@
+
+
+
          
     }
+
+
 
 
 /*Utilidades*/
