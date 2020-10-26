@@ -31,9 +31,9 @@
      string DiasdeVacaciones;
      string SalarioMensual;
      DateTime FechaInicio, FechaHoy;
-     double salarioDiario=0,  pagoVacaciones=0, noventaDiasSalario=0, doceDiasSalario=0;
-     int _salarioMensual=0, _diasdeVacaciones=0;
-    
+     double salarioDiario=0,  pagoVacaciones=0, noventaDiasSalario=0, doceDiasSalario=0, aguinaldo=0;
+     int _salarioMensual, _diasdeVacaciones;
+     
 
     @* Captura del salario menssual para sacar el diario *@
 
@@ -79,9 +79,12 @@
 
         @* 12 DIAS DEL SALARIO *@
         doceDiasSalario=salarioDiario*20;
-        Console.WriteLine("20 dias de salario: "+ doceDiasSalario);
+        Console.WriteLine("12 dias de salario: "+ doceDiasSalario);
 
-        @* AGUINALDO *@
+        @* AGUINALDO = 15 dias de salario *@
+        aguinaldo=salarioDiario*15;
+        Console.WriteLine("Aguinaldo es: "+aguinaldo);
+
 
         @* TOTAL DE LA LIQUIDACIÓN *@
 
