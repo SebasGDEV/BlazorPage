@@ -16,6 +16,9 @@
     <MatDatePicker id="FechaIniciodeLabores" Label="Fecha inicio de labores" Required="true" @bind-Value="@FechaInicio" Outlined="true"
     style="width:-webkit-fill-available;" EnableWeekNumbers="true"></MatDatePicker>
     <br><br>
+    <MatDatePicker id="FechaFindeLabores" Label="Fecha fin de labores" Required="true" @bind-Value="@FechaTerminacion" Outlined="true"
+    style="width:-webkit-fill-available;" EnableWeekNumbers="true"></MatDatePicker>
+    <br><br>
     <div class="contenedor" >
     <MatButton Raised="true" style="width: 6rem;" @onclick="@LimpiarFormulario">Limpiar</MatButton>
     <MatButton Raised="true" style="width: 13rem;" @onclick="@sumar">Calcular</MatButton>
@@ -30,7 +33,7 @@
 {
      string DiasdeVacaciones;
      string SalarioMensual;
-     DateTime FechaInicio, FechaHoy;
+     DateTime FechaInicio, FechaTerminacion;
      double salarioDiario=0,  pagoVacaciones=0, noventaDiasSalario=0, doceDiasSalario=0, aguinaldo=0,
      _salarioMensual, _diasdeVacaciones;
      
@@ -43,12 +46,14 @@
         _diasdeVacaciones=Convert.ToDouble(DiasdeVacaciones);
 
         @* Procesamiento de fechas *@
-        FechaHoy=DateTime.Now;
-        Console.WriteLine(FechaHoy.ToString("MM/dd/yyyy"));
-        int anio=Convert.ToInt32(FechaHoy.ToString("yyyy"));
+        FechaTerminacion=DateTime.Now;
+        Console.WriteLine(FechaTerminacion.ToString("MM/dd/yyyy"));
+        int anio=Convert.ToInt32(FechaTerminacion.ToString("yyyy"));
         System.Console.WriteLine("aniiio " + anio);
+        DateTime InicioAno=Convert.ToDateTime(01/01/anio);
+        System.Console.WriteLine("Inicio del año puesto : "+ InicioAno);
         Console.WriteLine("Proceamiento de las fechas");
-        var yearsOld = FechaHoy - FechaInicio;
+        var yearsOld = FechaTerminacion - FechaInicio;
         Console.WriteLine("Dias del test: "+ yearsOld);
         int years = (int)(yearsOld.TotalDays / 365.25);
         int months = (int)(((yearsOld.TotalDays / 365.25) - years) * 12);
