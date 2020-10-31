@@ -95,7 +95,7 @@
 
         @* AGUINALDO = 15 dias de salario, calcular lo pendiente por el año trabajado*@
         @* Calculo de aguinaldo diario *@
-        Aguinaldo=Convert.ToInt32((salarioDiario*15);
+        Aguinaldo=Convert.ToInt32(((salarioDiario*15)/365.25)*DiasAnioEnCurso);
         Console.WriteLine("Aguinaldo es: "+ Aguinaldo);
 
 
