@@ -34,8 +34,14 @@ app {
 
 .contenedorcalculadora {
   width: 20rem;
+  height: 35rem;
   -webkit-box-flex: inherit;
   direction: row;
+}
+
+.box-liquidacion {
+  column-count: 2;
+  direction: column;
 }
 
 .main {

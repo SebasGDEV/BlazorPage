@@ -8,35 +8,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1510662757,
+        "HashCode": -1284278855,
         "Kind": "Components.Component",
-        "Name": "Blazor.App",
+        "Name": "Blazor.Pages.Liquidacion",
         "AssemblyName": "Blazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Liquidacion"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.App"
+          "Common.TypeName": "Blazor.Pages.Liquidacion"
         }
       },
       {
-        "HashCode": -745143434,
+        "HashCode": 789980855,
         "Kind": "Components.Component",
-        "Name": "Blazor.App",
+        "Name": "Blazor.Pages.Liquidacion",
         "AssemblyName": "Blazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Blazor.App"
+            "TagName": "Blazor.Pages.Liquidacion"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.App",
+          "Common.TypeName": "Blazor.Pages.Liquidacion",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -140,35 +140,68 @@
         }
       },
       {
-        "HashCode": -1284278855,
+        "HashCode": -1510662757,
         "Kind": "Components.Component",
-        "Name": "Blazor.Pages.Liquidacion",
+        "Name": "Blazor.App",
         "AssemblyName": "Blazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Liquidacion"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Pages.Liquidacion"
+          "Common.TypeName": "Blazor.App"
         }
       },
       {
-        "HashCode": 789980855,
+        "HashCode": -745143434,
         "Kind": "Components.Component",
-        "Name": "Blazor.Pages.Liquidacion",
+        "Name": "Blazor.App",
         "AssemblyName": "Blazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Blazor.Pages.Liquidacion"
+            "TagName": "Blazor.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazor.Pages.Liquidacion",
+          "Common.TypeName": "Blazor.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -114611123,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Shared.Loading123",
+        "AssemblyName": "Blazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Loading123"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Shared.Loading123"
+        }
+      },
+      {
+        "HashCode": 2042283650,
+        "Kind": "Components.Component",
+        "Name": "Blazor.Shared.Loading123",
+        "AssemblyName": "Blazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Blazor.Shared.Loading123"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Blazor.Shared.Loading123",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -107358,6 +107391,11 @@
     {
       "FilePath": "c:\\Users\\SGARCORO\\Documents\\GitHub\\BlazorPage\\Shared\\NavMenu.razor",
       "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\SGARCORO\\Documents\\GitHub\\BlazorPage\\Shared\\Loading123.razor",
+      "TargetPath": "Shared\\Loading123.razor",
       "FileKind": "component"
     },
     {
