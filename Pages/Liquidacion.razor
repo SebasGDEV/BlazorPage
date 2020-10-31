@@ -3,6 +3,7 @@
 
 
 <center><h1>     Calculadora de Liquidación    </h1>
+<div style="column-count: 2;">
 <div class="contenedorcalculadora" >
 
 
@@ -23,11 +24,37 @@
     <MatButton Raised="true" style="width: 6rem;" @onclick="@LimpiarFormulario">Limpiar</MatButton>
     <MatButton Raised="true" style="width: 13rem;" @onclick="@sumar">Calcular</MatButton>
     </div>
-    <MatTextField id="txtSalarioMensual" @bind-Value="@SalarioMensual" Dense="true" Label="Salario Mensual" Outlined="true"
-    style="width:-webkit-fill-available;" Required="true" ></MatTextField>
+ 
 
 
 </div>
+<div class="contenedorcalculadora" >
+
+
+    <br>  <br>
+    <MatTextField id="txtSalarioMensual" @bind-Value="@SalarioMensual" Dense="true" Label="Salario Mensual" Outlined="true"
+    style="width:-webkit-fill-available;" Required="true" ></MatTextField>
+    <br><br>
+    <MatTextField id="txtDiasdeVacaciones" @bind-Value="@DiasdeVacaciones" Dense="true" Label="Dias de Vacaciones" Outlined="true"
+    style="width:-webkit-fill-available;" Required="true" ></MatTextField>
+    <br><br>
+    <MatDatePicker id="FechaIniciodeLabores" Label="Fecha inicio de labores" Required="true" @bind-Value="@FechaInicio" Outlined="true"
+    style="width:-webkit-fill-available;" EnableWeekNumbers="true"></MatDatePicker>
+    <br><br>
+    <MatDatePicker id="FechaFindeLabores" Label="Fecha fin de labores" Required="true" @bind-Value="@FechaTerminacion" Outlined="true"
+    style="width:-webkit-fill-available;" EnableWeekNumbers="true"></MatDatePicker>
+    <br><br>
+    <div class="contenedor" >
+    <MatButton Raised="true" style="width: 6rem;" @onclick="@LimpiarFormulario">Limpiar</MatButton>
+    <MatButton Raised="true" style="width: 13rem;" @onclick="@sumar">Calcular</MatButton>
+    </div>
+ 
+</div>
+
+</div>
+
+
+
 
 
 
