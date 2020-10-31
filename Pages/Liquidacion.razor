@@ -34,8 +34,10 @@
      string DiasdeVacaciones;
      string SalarioMensual;
      DateTime FechaInicio, FechaTerminacion;
-     double salarioDiario=0,  pagoVacaciones=0, noventaDiasSalario=0, doceDiasSalario=0, aguinaldo=0,
+     double salarioDiario=0,  pagoVacaciones=0, noventaDiasSalario=0, doceDiasSalario=0, 
      _salarioMensual, _diasdeVacaciones;
+
+     int Aguinaldo=0;
      
 
     @* Captura del salario menssual para sacar el diario *@
@@ -49,12 +51,15 @@
         Console.WriteLine(FechaTerminacion.ToString("MM/dd/yyyy"));
 
         @* Determinar el inicio de año para poder realizar el equivalente al aguinaldo *@
-        int anio=Convert.ToInt32(FechaTerminacion.ToString("yyyy"));
-        System.Console.WriteLine("aniiio " + anio);
-        
-
-        string FechaAnioConcatenada=("01/01/"+anio);
-        System.Console.WriteLine("Fecha concatenada del año en curso pero con 011" + FechaAnioConcatenada);
+        int currentyear=Convert.ToInt32(FechaTerminacion.ToString("yyyy"));
+        System.Console.WriteLine("Año en curso: " + currentyear);
+        string FechaAnioEnCursoString=("01/01/"+currentyear);
+        DateTime FechaAnioEnCurso=Convert.ToDateTime(FechaAnioEnCursoString);
+        System.Console.WriteLine("Fecha concatenada del año en curso: "  + FechaAnioEnCurso);
+        @* Conteo de dias para el aguinaldo *@
+        var DiasAnioEnCurso1=FechaTerminacion-FechaAnioEnCurso;
+        int DiasAnioEnCurso=(int)(DiasAnioEnCurso1.TotalDays);
+        System.Console.WriteLine("Dias del Año en curso restadas: " + DiasAnioEnCurso);
         @* Finaliza el equivalewnte aguinaldo fechas *@
 
         Console.WriteLine("Proceamiento de las fechas");
@@ -89,9 +94,9 @@
         Console.WriteLine("12 dias de salario: "+ doceDiasSalario);
 
         @* AGUINALDO = 15 dias de salario, calcular lo pendiente por el año trabajado*@
-
-        aguinaldo=salarioDiario*15;
-        Console.WriteLine("Aguinaldo es: "+aguinaldo);
+        @* Calculo de aguinaldo diario *@
+        Aguinaldo=Convert.ToInt32((salarioDiario*15);
+        Console.WriteLine("Aguinaldo es: "+ Aguinaldo);
 
 
         @* TOTAL DE LA LIQUIDACIÓN *@
