@@ -32,12 +32,11 @@
 
 
     <br>  <br>
-    <MatTextField id="lblSalarioMensual" @bind-Value="@SalarioMensual" Dense="true" Label="Salario Mensual" Outlined="true"
-    style="width:-webkit-fill-available;"  ></MatTextField>
-    <br><br>
     <MatTextField id="lblSalarioDiario" @bind-Value="@salarioDiario" Dense="true" Label="SalarioDiario" Outlined="true"
     style="width:-webkit-fill-available;"  ></MatTextField>
     <br><br>
+    <MatTextField id="lblAguinaldoProporcional" @bind-Value="@Aguinaldo" Dense="true" Label="Aguinaldo" Outlined="true"
+    style="width:-webkit-fill-available;"  ></MatTextField>
     
  
 </div>
@@ -62,7 +61,7 @@
      string DiasdeVacaciones;
      string SalarioMensual;
      DateTime FechaInicio, FechaTerminacion;
-     double salarioDiario=0,  pagoVacaciones=0, noventaDiasSalario=0, doceDiasSalario=0, 
+     double salarioDiario,  pagoVacaciones, noventaDiasSalario, doceDiasSalario, 
      _salarioMensual, _diasdeVacaciones;
 
      int Aguinaldo=0;
@@ -71,6 +70,7 @@
     @* Captura del salario menssual para sacar el diario *@
 
     public void sumar(){
+
         @* Conversiones a Int *@
         _salarioMensual = Convert.ToDouble(SalarioMensual);
         _diasdeVacaciones=Convert.ToDouble(DiasdeVacaciones);
