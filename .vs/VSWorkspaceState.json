@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\bin",
-    "\\bin\\Release",
-    "\\bin\\Release\\netstandard2.1",
-    "\\bin\\Release\\netstandard2.1\\publish",
-    "\\bin\\Release\\netstandard2.1\\publish\\wwwroot"
+    ""
   ],
+  "SelectedNode": "\\Blazor.csproj",
   "PreviewInSolutionExplorer": false
 }

@@ -85,6 +85,12 @@
         string FechaAnioEnCursoString=("01/01/"+currentyear);
         DateTime FechaAnioEnCurso=Convert.ToDateTime(FechaAnioEnCursoString);
         System.Console.WriteLine("Fecha concatenada del año en curso: "  + FechaAnioEnCurso);
+        
+        @* Recibir el año de inicio *@
+        int startedyear=Convert.ToInt32(FechaInicio.ToString("yyyy"));
+        System.Console.WriteLine("Año de inicio es: " + startedyear);
+
+
         @* Conteo de dias para el aguinaldo *@
         var DiasAnioEnCurso1=FechaTerminacion-FechaAnioEnCurso;
         int DiasAnioEnCurso=(int)(DiasAnioEnCurso1.TotalDays);
@@ -124,6 +130,8 @@
 
         @* AGUINALDO = 15 dias de salario, calcular lo pendiente por el año trabajado*@
         @* Calculo de aguinaldo diario *@
+
+        @* if(FechaAnioEnCurso<) *@
         Aguinaldo=Convert.ToInt32(((salarioDiario*15)/365.25)*DiasAnioEnCurso);
         Console.WriteLine("Aguinaldo es: "+ Aguinaldo);
 
