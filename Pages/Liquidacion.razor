@@ -84,11 +84,13 @@
         System.Console.WriteLine("Año en curso: " + currentyear);
         string FechaAnioEnCursoString=("01/01/"+currentyear);
         DateTime FechaAnioEnCurso=Convert.ToDateTime(FechaAnioEnCursoString);
-        System.Console.WriteLine("Fecha concatenada del año en curso: "  + FechaAnioEnCurso);
+        @* System.Console.WriteLine("Fecha concatenada del año en curso: "  + FechaAnioEnCurso); *@
         
         @* Recibir el año de inicio *@
-        int startedyear=Convert.ToInt32(FechaInicio.ToString("yyyy"));
-        System.Console.WriteLine("Año de inicio es: " + startedyear);
+        int startedyearString=Convert.ToInt32(FechaInicio.ToString("yyyy"));
+        System.Console.WriteLine("Año de inicio es: " + startedyearString);
+        DateTime startedyear=Convert.ToDateTime("01/01/"+startedyearString);
+        System.Console.WriteLine("Año de inicio: "+ startedyear);
 
 
         @* Conteo de dias para el aguinaldo *@
@@ -130,10 +132,17 @@
 
         @* AGUINALDO = 15 dias de salario, calcular lo pendiente por el año trabajado*@
         @* Calculo de aguinaldo diario *@
-
-        @* if(FechaAnioEnCurso<) *@
-        Aguinaldo=Convert.ToInt32(((salarioDiario*15)/365.25)*DiasAnioEnCurso);
-        Console.WriteLine("Aguinaldo es: "+ Aguinaldo);
+        int salarioAguinaldoDiario=Convert.ToInt32((salarioDiario*15)/365.25);
+        if (FechaAnioEnCurso==startedyear)
+        {
+            @* Resta de dias entre una fecha y otra *@
+            Aguinaldo=Convert.ToInt32((int)(((FechaTerminacion-FechaInicio).TotalDays)+1)*salarioAguinaldoDiario);
+            System.Console.WriteLine("Aguinaldo cuando es el mismo año: "+ Aguinaldo);
+        }else{
+            Aguinaldo=Convert.ToInt32(salarioAguinaldoDiario*DiasAnioEnCurso);
+            Console.WriteLine("Aguinaldo es: "+ Aguinaldo);
+        }
+        
 
 
         @* TOTAL DE LA LIQUIDACIÓN *@
